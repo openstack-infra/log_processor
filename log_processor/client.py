@@ -63,8 +63,11 @@ class EventProcessor(threading.Thread):
         self.socket.setsockopt(zmq.SUBSCRIBE, event_filter)
         self.socket.connect(self.zmq_address)
 
+    def _get_event(self):
+        return self.socket.recv().decode('utf-8')
+
     def _read_event(self):
-        string = self.socket.recv().decode('utf-8')
+        string = self._get_event()
         event = json.loads(string.split(None, 1)[1])
         logging.debug("Jenkins event received: " + json.dumps(event))
         for fileopts in self.files:

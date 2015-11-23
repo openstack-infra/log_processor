@@ -1,0 +1,9 @@
+source-url: http://fake
+
+zmq-publishers:
+  - tcp://fake
+
+source-files:
+  - name: console.html
+    tags:
+      - console

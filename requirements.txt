@@ -1,0 +1,5 @@
+PyYAML
+gear
+python-daemon
+pyzmq
+statsd
