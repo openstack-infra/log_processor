@@ -31,5 +31,5 @@ Install Log Processor
 
 To install directly from git::
 
-  git clone git://git.openstack.org/openstack-infra/log_processor.git /path/to/log_processor
+  git clone https://git.openstack.org/openstack-infra/log_processor.git /path/to/log_processor
   pip install /path/to/log_processor
