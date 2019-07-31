@@ -1,7 +1,0 @@
-# log_processor uses hacking for its dependencies
-hacking>=0.10.2,<0.11
-coverage
-sphinx>=1.1.2,!=1.2.0,!=1.3b1,<1.3
-sphinxcontrib-programoutput
-testrepository>=0.0.13
-mock
